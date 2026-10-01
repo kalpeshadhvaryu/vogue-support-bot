@@ -1,0 +1,31 @@
+{
+    "name": "voguehosting/support-bot",
+    "description": "WHMCS addon: Grok-powered customer support assistant for Vogue Hosting.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "VogueHosting\\SupportBot\\": "modules/addons/voguesupportbot/lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VogueHosting\\SupportBot\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
